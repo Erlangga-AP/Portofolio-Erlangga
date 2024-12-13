@@ -2,13 +2,13 @@ export default function Skill() {
   return (
     <section
       id="skill-section"
-      className="content- bg-BG2 bg-[url('/bg-skill.svg')] bg-cover bg-no-repeat text-white"
+      className="bg-BG2 bg-[url('/bg-skill.svg')] bg-cover bg-no-repeat text-white"
     >
       <div className="hidden justify-center pb-[35px] pt-[60px] lg:flex">
         <img src="/mouse-logo.svg" alt="" />
       </div>
 
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center p-10">
         <h2 className="text-[55px] text-Brand1">Skills</h2>
         <img src="/line-22-logo.svg" alt="" />
         <p className="mt-3 font-IBMPlexMono">
@@ -16,7 +16,7 @@ export default function Skill() {
         </p>
       </div>
 
-      <div className="mt-12 flex flex-col items-center justify-center gap-14 lg:flex-row">
+      <div className="mt-4 flex flex-col items-center justify-center gap-14 lg:flex-row">
         <div className="flex flex-col items-center rounded-lg border-l-[10px] border-[#0C73B8] bg-Brand2 p-8 text-center">
           <img src="/monitor-logo.svg" alt="" />
 

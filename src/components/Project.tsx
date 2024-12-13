@@ -26,7 +26,10 @@ export default function Project() {
       <Slider {...settings} className="mx-auto w-[400px] pb-10 lg:w-[1000px]">
         {project.map((el) => {
           return (
-            <div className="mt-3 flex rounded-xl bg-BG2 p-10">
+            <div
+              aria-hidden="true"
+              className="mt-3 flex rounded-xl bg-BG2 p-10"
+            >
               <div className="flex justify-center overflow-hidden rounded-xl">
                 <img
                   className="w-[400px] rounded-2xl lg:w-[500px]"

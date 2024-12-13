@@ -9,7 +9,7 @@ export default function Home() {
         <div className="w-fit rounded-br-[150px] rounded-tl-[150px] border border-white p-8 text-sm font-medium text-white shadow-[-5px_-5px_3px_#12F7D6]">
           <div className="mb-[32px] flex flex-col items-center">
             <div className="h-20 w-20 overflow-hidden rounded-full border-[4px] border-Brand1">
-              <img src="/image-angga.jpg" alt="" />
+              <img src="/angga.jpg" alt="" />
             </div>
             <div className="flex flex-col items-center gap-5">
               <h2 className="mt-4 text-[28px]">Erlangga</h2>

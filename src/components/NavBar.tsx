@@ -24,13 +24,16 @@ export default function NavBar() {
           />
 
           <div className="relative hidden lg:block">
-            <input className="rounded-full" type="text" />
-            <img
-              className="absolute right-[10px] top-[2px]"
-              src="/search-logo.svg"
-              alt=""
-            />
+            <input id="search" className="rounded-full" type="text" />
+            <label htmlFor="search">
+              <img
+                className="absolute right-[10px] top-[2px]"
+                src="/search-logo.svg"
+                alt=""
+              />
+            </label>
           </div>
+
           <ul className="flex gap-5">
             <li className="hidden lg:block">
               <a

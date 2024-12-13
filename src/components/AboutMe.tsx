@@ -2,7 +2,7 @@ export default function AboutMe() {
   return (
     <section
       id="about-me-section"
-      className="min-h-[100vh] bg-BG2 bg-[url('/about-me-bg.svg')] bg-cover bg-no-repeat px-10 font-Ubuntu text-white"
+      className="min-h-[100vh] bg-BG2 bg-[url('/about-me.png')] bg-cover bg-no-repeat px-10 font-Ubuntu text-white"
     >
       <div className="hidden justify-center pb-[50px] pt-[60px] lg:flex">
         <img src="/mouse-logo.svg" alt="" />

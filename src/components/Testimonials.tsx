@@ -31,7 +31,10 @@ export default function Testimonials() {
       <Slider {...settings} className="mx-auto w-[400px] p-3 lg:w-[500px]">
         {testimonials.map((el) => {
           return (
-            <div className="mt-3 rounded-3xl bg-BG1 px-10 pb-6 pt-8">
+            <div
+              aria-hidden="true"
+              className="mt-3 rounded-3xl bg-BG1 px-10 pb-6 pt-8"
+            >
               <div>
                 <img className="rounded-2xl" src={el.image} alt="" />
               </div>
@@ -39,9 +42,9 @@ export default function Testimonials() {
               <p className="pt-5 text-[17px]">{el.description}</p>
 
               <div>
-                <h4 className="mt-1 text-[20px] font-semibold text-Brand1">
+                <h3 className="mt-1 text-[20px] font-semibold text-Brand1">
                   {el.name}
-                </h4>
+                </h3>
                 <p className="-mt-1 text-[15px] font-medium">{el.works}</p>
               </div>
             </div>
