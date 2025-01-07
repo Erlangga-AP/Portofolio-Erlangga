@@ -4,7 +4,10 @@ export default function AboutMe() {
       id="about-me-section"
       className="min-h-[100vh] bg-BG2 bg-[url('/about-me.png')] bg-cover bg-no-repeat px-10 font-Ubuntu text-white"
     >
-      <div className="hidden justify-center pb-[50px] pt-[60px] lg:flex">
+      <div
+        className="hidden justify-center pb-[50px] pt-[60px] lg:flex"
+        aria-hidden="true"
+      >
         <img src="/mouse-logo.svg" alt="" />
       </div>
 
@@ -14,25 +17,35 @@ export default function AboutMe() {
             About Me
           </h1>
           <div className="rounded-2xl bg-BG1 p-10">
-            <img src="/p-color-logo.svg" alt="" />
+            <img src="/p-color-logo.svg" alt="" aria-hidden="true" />
             <h2 className="mt-4 text-[35px] text-Brand1">Hello!</h2>
             <p className="color-text">
-              My name is Sinan and I specialize in web developement that
-              utilizes <span>HTML</span>, <span>CSS</span>, <span>JS</span>, and{" "}
+              My name is Sinan and I specialize in web development that utilizes{" "}
+              <span>HTML</span>, <span>CSS</span>, <span>JS</span>, and{" "}
               <span>REACT</span> etc. I am a highly motivated individual and
               eternal optimist dedicated to writing clear, concise, robust code
               that works. Striving to never stop learning and improving. When
-              I'm not coding, I am <span>writing bolgs</span>, reading, or
+              I'm not coding, I am <span>writing blogs</span>, reading, or
               picking up some new hands-on art project like
               <span>photography</span>. I like to have my perspective and belief
               systems challenged so that I see the world through new eyes.
             </p>
-            <img className="mt-4" src="/p-closed-color-logo.svg" alt="" />
+            <img
+              className="mt-4"
+              src="/p-closed-color-logo.svg"
+              alt=""
+              aria-hidden="true"
+            />
           </div>
         </div>
 
         <div>
-          <img className="w-99" src="/Image-laptop.svg" alt="" />
+          <img
+            className="w-99"
+            src="/Image-laptop.svg"
+            alt=""
+            aria-hidden="true"
+          />
         </div>
       </div>
     </section>

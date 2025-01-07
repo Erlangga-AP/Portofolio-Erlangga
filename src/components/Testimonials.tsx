@@ -11,18 +11,22 @@ export default function Testimonials() {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+
   return (
     <section
       id="testimonial-section"
       className="bg-[url('/bg-works.svg')] bg-cover bg-no-repeat pb-10 text-white"
     >
-      <div className="hidden justify-center pb-[10px] pt-[60px] lg:flex">
+      <div
+        className="hidden justify-center pb-[10px] pt-[60px] lg:flex"
+        aria-hidden="true"
+      >
         <img src="/mouse-logo.svg" alt="" />
       </div>
 
       <div className="flex flex-col items-center pt-10">
         <h2 className="text-[25px] text-Brand1">Testimonials</h2>
-        <img src="/line-22-logo.svg" alt="" />
+        <img src="/line-22-logo.svg" alt="" aria-hidden="true" />
         <p className="mt-3 font-IBMPlexMono">
           Nice things people have said about me:
         </p>
@@ -32,11 +36,16 @@ export default function Testimonials() {
         {testimonials.map((el) => {
           return (
             <div
-              aria-hidden="true"
               className="mt-3 rounded-3xl bg-BG1 px-10 pb-6 pt-8"
+              aria-hidden="false"
             >
-              <div>
-                <img className="rounded-2xl" src={el.image} alt="" />
+              <div className="flex justify-center">
+                <img
+                  className="rounded-2xl"
+                  src={el.image}
+                  alt={`${el.name}'s portrait`}
+                  aria-hidden="false"
+                />
               </div>
 
               <p className="pt-5 text-[17px]">{el.description}</p>

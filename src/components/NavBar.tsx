@@ -3,7 +3,12 @@ export default function NavBar() {
     <header className="absolute w-full bg-BG1 p-[40px] text-white">
       <nav className="flex justify-between">
         <h1 className="flex items-center gap-2 text-[15px] lg:text-[20px]">
-          <img className="h-4 lg:h-6" src="/close-logo.svg" alt="" />
+          <img
+            className="h-4 lg:h-6"
+            src="/close-logo.svg"
+            alt=""
+            aria-hidden="true"
+          />
           <span>ErlanggaAdiPrasetya</span>
         </h1>
 
@@ -21,6 +26,7 @@ export default function NavBar() {
             className="block lg:hidden"
             src="/search-white-logo.svg"
             alt=""
+            aria-hidden="true"
           />
 
           <div className="relative hidden lg:block">
@@ -40,12 +46,13 @@ export default function NavBar() {
                 className="flex items-center gap-2"
                 href="https://www.instagram.com/"
                 target="_blank"
-                aria-label="instagram"
+                aria-label="Instagram"
               >
                 <img
                   className="h-[20px] w-[20px]"
                   src="/instagram-logo.svg"
                   alt=""
+                  aria-hidden="true"
                 />
                 <span>Instagram</span>
               </a>
@@ -55,12 +62,13 @@ export default function NavBar() {
                 className="flex items-center gap-2"
                 href="https://discord.com/"
                 target="_blank"
-                aria-label="discord"
+                aria-label="Discord"
               >
                 <img
                   className="h-[20px] w-[20px]"
                   src="/discord-logo.svg"
                   alt=""
+                  aria-hidden="true"
                 />
                 <span>Discord</span>
               </a>
@@ -70,12 +78,13 @@ export default function NavBar() {
                 className="flex items-center gap-2"
                 href="https://github.com/"
                 target="_blank"
-                aria-label="github"
+                aria-label="Github"
               >
                 <img
                   className="h-[20px] w-[20px]"
                   src="/github-logo.svg"
                   alt=""
+                  aria-hidden="true"
                 />
                 <span>Github</span>
               </a>
