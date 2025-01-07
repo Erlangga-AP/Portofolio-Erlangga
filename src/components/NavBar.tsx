@@ -29,7 +29,7 @@ export default function NavBar() {
               <img
                 className="absolute right-[10px] top-[2px]"
                 src="/search-logo.svg"
-                alt=""
+                alt="search"
               />
             </label>
           </div>
@@ -40,6 +40,7 @@ export default function NavBar() {
                 className="flex items-center gap-2"
                 href="https://www.instagram.com/"
                 target="_blank"
+                aria-label="instagram"
               >
                 <img
                   className="h-[20px] w-[20px]"
@@ -54,6 +55,7 @@ export default function NavBar() {
                 className="flex items-center gap-2"
                 href="https://discord.com/"
                 target="_blank"
+                aria-label="discord"
               >
                 <img
                   className="h-[20px] w-[20px]"
@@ -68,6 +70,7 @@ export default function NavBar() {
                 className="flex items-center gap-2"
                 href="https://github.com/"
                 target="_blank"
+                aria-label="github"
               >
                 <img
                   className="h-[20px] w-[20px]"
